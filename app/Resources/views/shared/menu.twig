@@ -1,0 +1,49 @@
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+      
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand visible-xs" href="#">Menu</a>
+    </div>
+      
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav justified  ">
+        <li class=" menu"><a href="{{ path('studio_site_homepage') }}">Accueil<span class="sr-only">(current)</span></a></li>
+        <li class="menu" ><a href="{{ path('studio_site_profil') }}">Qui suis-je?</a></li>
+        <li class="dropdown menu">
+          <a href="{{ path('studio_site_portraits')}}" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portraits<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ path('studio_site_kids')}}">Enfant</a></li>
+            <li><a href="{{ path('studio_site_adult')}}">Adulte</a></li>
+            <li><a href="{{ path('studio_site_family')}}">Famille</a></li>
+          </ul>
+        </li>
+         <li class="dropdown menu">
+          <a href="{{ path('studio_site_wedding')}}" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mariages<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ path('studio_site_day')}}">Au fil de la journée</a></li>
+            <li><a href="{{ path('studio_site_couple')}}">Couple</a></li>
+            <li><a href="{{ path('studio_site_group')}}">Groupe</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a href="{{ path('studio_site_price')}}">Tarifs</a></li>
+        <li class="menu"><a href="{{ path('studio_site_blog')}}">Blog</a></li>
+        <li class="menu"><a href="{{ path('studio_site_contact')}}">Contact</a></li>
+    </ul>
+        
+        <p class="navbar-text navbar-right">
+            <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </p>
+        
+    </div>
+    </div>
+</nav>

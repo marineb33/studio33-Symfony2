@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <title>Studio33</title>
+        {% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        <div class="container">
+            {{ include('shared/header.twig') }}
+        </div> 
+        <div class="container container-large">
+            {{ include('shared/menu.twig') }}
+        </div>
+        <div class="container">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+        <div class="container container-large">
+            {{ include('shared/footer.twig') }}
+        </div>
+        
+        {% block javascript %}
+            <script type= "text/javascript" src="{{ asset('js/jquery-3.1.0.js') }}"></script>
+            <script type= "text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+            <script type= "text/javascript" src="{{ asset('js/bootstrap-hover-dropdown.min.js') }}"></script>
+
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,43 @@
+{% extends "layout.twig" %}
+
+
+{% block content %}
+
+<br>
+<h1 class="text-center">Astuces de photographe</h1>
+<br>
+
+<div class="row">
+    {% if posts is defined %}
+        {% for post in posts %}
+            <div class="col-xs-12 col-md-6">
+                <img class="image_recadre center-block" src="/images/blog/{{ post.image }}"  alt="{{ post.alt }}">
+                <div class="row">
+                    <div class="col-xs-12">
+                    <h2 class="text-center">{{ post.title }}</h2> 
+                    <p>{{ post.description }}</p>
+                    <a role="button" aria-hidden="true" href="{{ path("studio_site_post_view",{"id":post.id})}}" class="btn  btn-default">Lire la suite</a>  
+                    </div>
+                </div>
+            </div>
+            
+            {% set res = loop.index%2 %}
+            
+            {% if res == "0" and loop.last != true %} 
+                <div class="col-xs-12">
+                    <br>
+                    <hr>
+                    <br>
+                </div>
+            {% endif %}   
+        {% endfor %}
+    {% endif %}
+</div>
+
+<br>
+
+      
+
+
+
+{% endblock %}     

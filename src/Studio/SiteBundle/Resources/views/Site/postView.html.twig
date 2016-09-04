@@ -1,0 +1,25 @@
+{% extends "layout.twig"%}
+
+{% block content %}
+
+{{ include(template_from_string(post.content)) }}
+<br>
+
+<div class="row">
+    <div class="col-xs-6">
+        <h2>Commentaires</h2>
+        {% for comment in post.comments %}
+            <div class="panel panel-default">
+              <div class="panel-heading">{{ comment.name }}</div>
+              <div class="panel-body">
+                  {{ comment.message }}
+              </div>
+            </div>
+        {% endfor%}
+  </div>
+</div>
+
+
+{{ render(controller("StudioSiteBundle:Site:commentForm", {"id":post.id})) }}   
+
+{% endblock %}

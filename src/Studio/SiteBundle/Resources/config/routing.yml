@@ -1,0 +1,75 @@
+studio_site_homepage:
+    path:     /
+    defaults: { _controller: StudioSiteBundle:Site:index }
+    
+studio_site_profil:
+    path:     /profil
+    defaults: { _controller: StudioSiteBundle:Site:profil }
+    
+studio_site_portraits:
+    path:     /portraits
+    defaults: { _controller: StudioSiteBundle:Site:portraits }
+    
+studio_site_kids:
+    path:     /portraits/kids
+    defaults: { _controller: StudioSiteBundle:Site:kids }
+    
+studio_site_adult:
+    path:     /portraits/adult
+    defaults: { _controller: StudioSiteBundle:Site:adult}
+    
+studio_site_family:
+    path:     /portraits/family
+    defaults: { _controller: StudioSiteBundle:Site:family }
+    
+studio_site_wedding:
+    path:     /wedding
+    defaults: { _controller: StudioSiteBundle:Site:wedding }
+    
+studio_site_day:
+    path:     /wedding/day
+    defaults: { _controller: StudioSiteBundle:Site:day }
+    
+studio_site_couple:
+    path:     /wedding/couple
+    defaults: { _controller: StudioSiteBundle:Site:couple }
+
+studio_site_group:
+    path:     /wedding/group
+    defaults: { _controller: StudioSiteBundle:Site:group }
+
+studio_site_price:
+    path:     /price
+    defaults: { _controller: StudioSiteBundle:Site:price }
+
+studio_site_blog:
+    path:     /blog
+    defaults: { _controller: StudioSiteBundle:Site:blog }
+    
+studio_site_article:
+    path:     /blog/article
+    defaults: { _controller: StudioSiteBundle:Site:article }
+
+studio_site_contact:
+    path:     /contact
+    defaults: { _controller: StudioSiteBundle:Site:contact }
+
+studio_site_legal:
+    path:     /legal
+    defaults: { _controller: StudioSiteBundle:Site:legal}
+
+studio_site_cookies:
+    path:     /cookies
+    defaults: { _controller: StudioSiteBundle:Site:cookies }
+
+studio_site_post_add:
+    path:     /post/add
+    defaults: { _controller: StudioSiteBundle:Site:postAdd }
+    
+studio_site_post_view:
+    path:     /post/view/{id}
+    defaults: { _controller: StudioSiteBundle:Site:postView }
+    
+studio_site_comment_form:
+    path:     /comment/form
+    defaults: { _controller: StudioSiteBundle:Site:commentForm }

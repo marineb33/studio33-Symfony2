@@ -1,0 +1,4 @@
+studio_site:
+    resource: "@StudioSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
